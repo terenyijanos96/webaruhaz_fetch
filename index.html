@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cd bolt</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="main.js" type="module"></script>
-</head>
-<body>
-    <header><h1>Cd bolt</h1></header>
-    <aside>
-        <nav>
-            <h2>Menü</h2>
+  </head>
+  <body>
+    <nav id="main-nav">
+        <a href="#" class="">Cd bolt</a>
+        <button>Bejelentkezés</button>
+        <button>Regisztráció</button>
+        <button>Kosár</button>
+    </nav>
+    <header>
+        <h1>Cd bolt</h1>
+    </header>
+    <div class="column-layout">
+      <aside>
+        <nav id="sidebar-nav" aria-label="oldalsó menü">
+          <h2>Menü</h2>
+          <ul>
+            <li>Összes cd</li>
+          </ul>
         </nav>
-    </aside>
-    <article>
+      </aside>
+      <article>
         <h2>Összes cd</h2>
-    </article>
+      </article>
+    </div>
     <footer>Weboldalt készítette: Terényi János</footer>
-</body>
+  </body>
 </html>
