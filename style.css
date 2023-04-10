@@ -33,11 +33,13 @@ aside {
     grid-area: aside;
     background-color: #444;
     border-right: 3px solid black;
+    padding: 15px;
 }
 
 article {
     grid-area: article;
     background-color:  #666;
+    padding: 15px;
 }
 
 footer {
