@@ -1,28 +1,27 @@
+import { ALBUMOK, FELHASZNALOK, PARTNEREIK } from "./adatok.js";
 
-import { ALBUMOK, FELHASZNALOK } from "./adatok.js";
+$(function () {
+  let hamburger = $("nav#main-nav .hamburger-menu-wrapper");
+  let hambuger_inside = $("nav#main-nav .hamburger-menu");
+  let aside = $("aside");
+  hamburger.click(function () {
+    console.log("asd");
+    hambuger_inside.toggleClass("rotate");
+    aside.toggleClass("show");
+  });
 
-$(function(){
-    let hamburger = $("nav#main-nav .hamburger-menu-wrapper")
-    let hambuger_inside = $("nav#main-nav .hamburger-menu")
-    let aside = $("aside")
-    hamburger.click(function(){
-        console.log("asd")
-        hambuger_inside.toggleClass("rotate")
-        aside.toggleClass("show")
-    })
-    
-    kartyakLegeneralasa()
+  kartyakLegeneralasa();
+  partnereinkLegeneralasa();
 
-    function kartyakLegeneralasa() {
-        let kartyak = $(".cards")
-        for (let i = 0; i < ALBUMOK.length; i++) {
-            kartyak.append(kartyaLetrehozasaObjektumbol(ALBUMOK[i]))
-        }
+  function kartyakLegeneralasa() {
+    let kartyak = $(".cards");
+    for (let i = 0; i < ALBUMOK.length; i++) {
+      kartyak.append(kartyaLetrehozasaObjektumbol(ALBUMOK[i]));
     }
+  }
 
-    function kartyaLetrehozasaObjektumbol(obj) {
-        return (
-          `
+  function kartyaLetrehozasaObjektumbol(obj) {
+    return `
           <div class="card">
             <img
               src="${obj.boritokep}"
@@ -71,8 +70,23 @@ $(function(){
               </form>
             </div>
           </div>
-          `
-        )        
-    }
-})
+          `;
+  }
 
+  function partnereinkLegeneralasa() {
+    let aside = $("aside");
+    aside.append("<h3>Partnereink:</h3>");
+    for (let i = 0; i < PARTNEREIK.length; i++) {
+      aside.append(partnerLetrehozasaObjektumbok(PARTNEREIK[i]));
+    }
+  }
+
+  function partnerLetrehozasaObjektumbok(obj) {
+    return `
+      <div class="partner">
+        <img src="${obj.banner}" alt="${obj.nev}" />
+        <a href="${obj.link}" target="_blank">${obj.nev}</a>
+      </div>
+        `;
+  }
+});

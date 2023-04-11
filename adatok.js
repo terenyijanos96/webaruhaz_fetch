@@ -555,3 +555,7 @@ export const FELHASZNALOK = [
   { felhasznalonev: "admin", jelszo: "admin" },
   { felhasznalonev: "felhasznalo", jelszo: "password" },
 ];
+
+export const PARTNEREIK = [
+    {nev: "GG Store", link: "https://patrisarose.github.io/WebAruhaz/GamerWebshop/", banner: "gg.jpg"}
+]

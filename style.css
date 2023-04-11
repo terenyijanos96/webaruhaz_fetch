@@ -92,6 +92,20 @@ aside {
   padding: 15px;
 }
 
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partner img {
+  width: 170px;
+}
+
+.partner a {
+  color: #fff
+}
+
 article {
   flex: 3;
   background-color: #666;
