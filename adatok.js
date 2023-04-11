@@ -557,5 +557,5 @@ export const FELHASZNALOK = [
 ];
 
 export const PARTNEREIK = [
-    {nev: "GG Store", link: "https://patrisarose.github.io/WebAruhaz/GamerWebshop/", banner: "gg.jpg"}
+    {nev: "GG Store", link: "https://patrisarose.github.io/WebAruhaz/GamerWebshop/", banner: "gg.jpg"},
 ]
