@@ -111,14 +111,18 @@ article {
   gap: 15px;
 }
 
-  .card-header {
-    padding: 0 10px;
-    font-size: 23px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-  }
+.card-header {
+  padding: 0 10px;
+  font-size: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  inline-size: 25ch;
+  overflow-wrap: break-word;
+  hyphens: manual;
+  text-align: center;
+}
 
 .card-header::after {
   content: "";
@@ -197,11 +201,21 @@ footer {
   height: 50px;
 }
 
-@media screen and (max-width: 800px){
-    aside {
-        flex: 0;
-        width: 0;
-        padding: 0;
-        border: 0;
-    }
+@media screen and (max-width: 800px) {
+  aside {
+    flex: 0;
+    border: 0;
+    padding: 15px 0;
+    width: 0;
+  }
+
+  aside.show {
+    flex: 2;
+    padding: 15px;
+    border-right: 3px solid black;
+  }
+
+  .hamburger-menu-wrapper {
+    display: block;
+  }
 }
