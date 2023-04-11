@@ -37,6 +37,54 @@ header {
   border-bottom: 3px solid black;
 }
 
+.hamburger-menu-wrapper {
+  height: 38px;
+  width: 40px;
+  background-color: #ddd;
+  position: relative;
+  border: 3px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger-menu {
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%) rotate(0);
+  transition: transform 0.6s;
+}
+
+.hamburger-menu::after,
+.hamburger-menu,
+.hamburger-menu::before {
+  display: block;
+  position: absolute;
+  height: 3px;
+  background-color: #000;
+  border-radius: 3px;
+}
+
+.hamburger-menu::after,
+.hamburger-menu::before {
+  content: "";
+  width: 100%;
+}
+
+.hamburger-menu::before {
+  top: -200%;
+}
+
+.hamburger-menu::after {
+  top: 200%;
+}
+
+.hamburger-menu-wrapper:active .hamburger-menu,
+.hamburger-menu.rotate {
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
 aside {
   flex: 1;
   background-color: #444;
