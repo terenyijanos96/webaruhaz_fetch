@@ -5,7 +5,6 @@ $(function () {
   let hambuger_inside = $("nav#main-nav .hamburger-menu");
   let aside = $("aside");
   hamburger.click(function () {
-    console.log("asd");
     hambuger_inside.toggleClass("rotate");
     aside.toggleClass("show");
   });
