@@ -8,16 +8,93 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="main.js" type="module"></script>
+    <style>
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 2px black;
+        gap: 15px
+      }
+
+      .card-header {
+        padding: 0 15px;
+        font-size: 23px;
+      }
+
+      .card img {
+        box-shadow: 0 0 5px #000;
+      }
+
+      .card table {
+        border-spacing: 15px 5px;
+      }
+
+      .card table th,
+      .card table td {
+        width: 50%;
+      }
+
+      .card table th {
+        text-align: right;
+      }
+
+      .card table button {
+        width: 100%;
+      }
+
+      .card-footer {
+        background-color: #222;
+        padding: 15px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        font-size: 20px;
+      }
+
+      .card-footer .price {
+        flex: 1;
+      }
+
+      .card-footer .cart {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+
+      .card-footer .cart label {
+        font-size: 20px;
+      }
+
+      .card-footer .cart input {
+        font-size: 15px;
+      }
+
+      .card-footer .cart input[type="number"] {
+        width: 8ch;
+        padding: 5px;
+      }
+
+      .card-footer .cart input[type="submit"] {
+        width: 100%;
+        padding: 5px;
+      }
+    </style>
   </head>
   <body>
     <nav id="main-nav">
-        <a href="#" class="">Cd bolt</a>
-        <button>Bejelentkezés</button>
-        <button>Regisztráció</button>
-        <button>Kosár</button>
+      <a href="#" class="">Cd bolt</a>
+      <button>Bejelentkezés</button>
+      <button>Regisztráció</button>
+      <button>Kosár</button>
     </nav>
     <header>
-        <h1>Cd bolt</h1>
+      <h1>Cd bolt</h1>
     </header>
     <div class="column-layout">
       <aside>
@@ -30,6 +107,59 @@
       </aside>
       <article>
         <h2>Összes cd</h2>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/CureDisintegration.jpg/220px-CureDisintegration.jpg"
+              alt=""
+            />
+            <h3 class="card-header">The Cure - Disintegration</h3>
+            <table>
+              <tr>
+                <th>Előadó</th>
+                <td>The Cure</td>
+              </tr>
+              <tr>
+                <th>Album</th>
+                <td>Disintegration</td>
+              </tr>
+              <tr>
+                <th>Műfaj</th>
+                <td>Gothic rock</td>
+              </tr>
+              <tr>
+                <th>Megjelenés</th>
+                <td>1989</td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <button>Több információ</button>
+                </td>
+              </tr>
+            </table>
+            <div class="card-footer">
+              <div class="price">Ár: 3000 Ft</div>
+              <form class="cart">
+     
+                <input
+                  type="number"
+                  min="0"
+                  value="0"
+                  max="100"
+                  name=""
+                  id="count"
+                  aria-label="darabszám kiválasztása"
+                />
+                <input
+                  type="submit"
+                  value="Kosárba"
+                  aria-label="kosárba rakás"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
       </article>
     </div>
     <footer>Weboldalt készítette: Terényi János</footer>
