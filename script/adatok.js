@@ -4,550 +4,600 @@ export const ALBUMOK = [
     album: "Disintegration",
     mufaj: "Gothic rock",
     megjelenes: 1989,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/b/b8/CureDisintegration.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/b/b8/CureDisintegration.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "The Cure",
     album: "Pornography",
     mufaj: "Gothic rock",
     megjelenes: 1982,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/0/07/The_Cure_-_Pornography.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/0/07/The_Cure_-_Pornography.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "The Cure",
     album: "Kiss Me, Kiss Me, Kiss Me",
     mufaj: "Gothic rock",
     megjelenes: 1987,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/f/f5/The_Cure_-_Kiss_Me%2C_Kiss_Me%2C_Kiss_Me.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/f/f5/The_Cure_-_Kiss_Me%2C_Kiss_Me%2C_Kiss_Me.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "The Cure",
     album: "Seventeen Seconds",
     mufaj: "Gothic rock",
     megjelenes: 1980,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/a/a5/Seventeen_Seconds.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/a/a5/Seventeen_Seconds.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "The Cure",
     album: "Three Imaginary Boys",
     mufaj: "Gothic rock",
     megjelenes: 1979,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/1/18/TheCureThreeImaginaryBoysalbumcover.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/1/18/TheCureThreeImaginaryBoysalbumcover.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Joy Division",
     album: "Unknown Pleasures",
     mufaj: "Gothic rock",
     megjelenes: 1979,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/5/5a/UnknownPleasuresVinyl.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/5/5a/UnknownPleasuresVinyl.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Joy Division",
     album: "Closer",
     mufaj: "Gothic rock",
     megjelenes: 1980,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/6/64/Joy_Division_Closer.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/6/64/Joy_Division_Closer.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Queens of the Stone Age",
     album: "Queens of the Stone Age",
     mufaj: "Stoner rock",
     megjelenes: 1998,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/f/f0/Queens_of_the_Stone_Age_%28Queens_of_the_Stone_Age_album_-_cover_art%29.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/f/f0/Queens_of_the_Stone_Age_%28Queens_of_the_Stone_Age_album_-_cover_art%29.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Queens of the Stone Age",
     album: "Rated R",
     mufaj: "Stoner rock",
     megjelenes: 2000,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/9/90/Queens_of_the_Stone_Age_-_Rated_R.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/9/90/Queens_of_the_Stone_Age_-_Rated_R.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Queens of the Stone Age",
     album: "Songs for the Deaf",
     mufaj: "Stoner rock",
     megjelenes: 2002,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/0/01/Queens_of_the_Stone_Age_-_Songs_for_the_Deaf.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/0/01/Queens_of_the_Stone_Age_-_Songs_for_the_Deaf.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Queens of the Stone Age",
     album: "Lullabies to Paralyze",
     mufaj: "Stoner rock",
     megjelenes: 2005,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/d/df/Queens_of_the_Stone_Age_Lullabies_to_Paralyze.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/d/df/Queens_of_the_Stone_Age_Lullabies_to_Paralyze.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Queens of the Stone Age",
     album: "Era Vulgaris",
     mufaj: "Stoner rock",
     megjelenes: 2007,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/d/d3/QOTSA_eravulgaris.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/d/d3/QOTSA_eravulgaris.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Queens of the Stone Age",
     album: "...Like Clockwork",
     mufaj: "Stoner rock",
     megjelenes: 2013,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/1/16/Queens_of_the_Stone_Age_-_%E2%80%A6Like_Clockwork.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/1/16/Queens_of_the_Stone_Age_-_%E2%80%A6Like_Clockwork.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Fugazi",
     album: "Repeater",
     mufaj: "Post-hardcore",
     megjelenes: 1990,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/8/80/Fugazi_-_Repeater_cover.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/8/80/Fugazi_-_Repeater_cover.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Fugazi",
     album: "13 Songs",
     mufaj: "Post-hardcore",
     megjelenes: 1989,
-    boritokep: "https://upload.wikimedia.org/wikipedia/commons/1/17/Fugazi_-_13_Songs_cover.PNG",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/commons/1/17/Fugazi_-_13_Songs_cover.PNG",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Fugazi",
     album: "Red Medicine",
     mufaj: "Post-hardcore",
     megjelenes: 1995,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/0/0e/Fugazi_-_Red_Medicine_cover.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/0/0e/Fugazi_-_Red_Medicine_cover.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Minor Threat",
     album: "First Two Seven Inches",
     mufaj: "Hardcore punk",
     megjelenes: 1981,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/2/22/Minor_Threat_-_First_Two_7%22s_on_a_12%22.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/2/22/Minor_Threat_-_First_Two_7%22s_on_a_12%22.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Minor Threat",
     album: "Out of Step",
     mufaj: "Hardcore punk",
     megjelenes: 1983,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/2/2c/Minor_Threat_-_Out_of_Step.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/2/2c/Minor_Threat_-_Out_of_Step.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Minor Threat",
     album: "Salad Days",
     mufaj: "Hardcore punk",
     megjelenes: 1985,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/7/72/Minor_Threat_-_Salad_Days.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/7/72/Minor_Threat_-_Salad_Days.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "Broken - EP",
     mufaj: "Industrial rock",
     megjelenes: 1992,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/c/c4/Nine_Inch_Nails_-_Broken_%28EP%29.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/c/c4/Nine_Inch_Nails_-_Broken_%28EP%29.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "The Downward Spiral",
     mufaj: "Industrial rock",
     megjelenes: 1994,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/3/3b/Official_Album_Cover_of_%22The_Downward_Spiral%22_by_Nine_Inch_Nails.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/3/3b/Official_Album_Cover_of_%22The_Downward_Spiral%22_by_Nine_Inch_Nails.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "The Fragile",
     mufaj: "Industrial rock",
     megjelenes: 1999,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/7/7c/Nine_Inch_Nails_-_The_Fragile.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/7/7c/Nine_Inch_Nails_-_The_Fragile.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "With Teeth",
     mufaj: "Industrial rock",
     megjelenes: 2005,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/e/e0/Nine_Inch_Nails_-_With_Teeth.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/e/e0/Nine_Inch_Nails_-_With_Teeth.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "Year Zero",
     mufaj: "Industrial rock",
     megjelenes: 2007,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/0/02/Nine_Inch_Nails_-_Year_Zero.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/0/02/Nine_Inch_Nails_-_Year_Zero.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "Ghosts I-IV",
     mufaj: "Industrial rock",
     megjelenes: 2008,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/6/60/Nine_Inch_Nails_-_Ghosts_I-IV.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/6/60/Nine_Inch_Nails_-_Ghosts_I-IV.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "The Slip",
     mufaj: "Industrial rock",
     megjelenes: 2008,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/0/03/Nine_Inch_Nails_-_The_Slip.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/0/03/Nine_Inch_Nails_-_The_Slip.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "Hesitation Marks",
     mufaj: "Industrial rock",
     megjelenes: 2013,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/8/83/Nine_Inch_Nails_-_Hesitation_Marks.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/8/83/Nine_Inch_Nails_-_Hesitation_Marks.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "Not the Actual Events - EP",
     mufaj: "Industrial rock",
     megjelenes: 2016,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/9/9c/Not_the_Actual_Events.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/9/9c/Not_the_Actual_Events.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "Add Violence - EP",
     mufaj: "Industrial rock",
     megjelenes: 2017,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/1/17/Add_Violence.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/1/17/Add_Violence.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "Bad Witch",
     mufaj: "Industrial rock",
     megjelenes: 2018,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/6/6d/Bad_Witch_%282018%29.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/6/6d/Bad_Witch_%282018%29.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "Ghosts V: Together",
     mufaj: "Industrial rock",
     megjelenes: 2020,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/9/90/Nine_Inch_Nails_-_Ghosts_V_Together.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/9/90/Nine_Inch_Nails_-_Ghosts_V_Together.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Nine Inch Nails",
     album: "Ghosts VI: Locusts",
     mufaj: "Industrial rock",
     megjelenes: 2020,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/f/f1/Nin_ghostsVI.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/f/f1/Nin_ghostsVI.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Sonic Youth",
     album: "Daydream Nation",
     mufaj: "Alternative rock",
     megjelenes: 1988,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/a/ad/Daydreamnation.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/a/ad/Daydreamnation.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Sonic Youth",
     album: "Goo",
     mufaj: "Alternative rock",
     megjelenes: 1990,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/b/b2/Sonicyouthgoo.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/b/b2/Sonicyouthgoo.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Sonic Youth",
     album: "Dirty",
     mufaj: "Noise rock",
     megjelenes: 1992,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/c/cb/Sonicyouthdirty.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/c/cb/Sonicyouthdirty.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Sonic Youth",
     album: "Rather Ripped",
     mufaj: "Alternative rock",
     megjelenes: 2006,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/f/f0/Sonicyouthratherripped.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/f/f0/Sonicyouthratherripped.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Radiohead",
     album: "Pablo Honey",
     mufaj: "Alternative rock",
     megjelenes: 1993,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/0/0f/Radiohead.pablohoney.albumart.jpg",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/0/0f/Radiohead.pablohoney.albumart.jpg",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Radiohead",
     album: "The Bends",
     mufaj: "Alternative rock",
     megjelenes: 1995,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/5/55/Radioheadthebends.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/5/55/Radioheadthebends.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Radiohead",
     album: "OK Computer",
     mufaj: "Alternative rock",
     megjelenes: 1997,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Radiohead",
     album: "Kid A",
     mufaj: "Alternative rock",
     megjelenes: 2000,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/0/02/Radioheadkida.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/0/02/Radioheadkida.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Radiohead",
     album: "Amnesiac",
     mufaj: "Alternative rock",
     megjelenes: 2001,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/8/8c/Radiohead_-_Amnesiac_cover.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/8/8c/Radiohead_-_Amnesiac_cover.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Radiohead",
     album: "Hail to the Thief",
     mufaj: "Alternative rock",
     megjelenes: 2003,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/6/61/Radioheadhailtothethief.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/6/61/Radioheadhailtothethief.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Radiohead",
     album: "In Rainbows",
     mufaj: "Alternative rock",
     megjelenes: 2007,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/1/14/Inrainbowscover.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/1/14/Inrainbowscover.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Radiohead",
     album: "The King of Limbs",
     mufaj: "Alternative rock",
     megjelenes: 2011,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/a/a2/Radioheadthekingoflimbs.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/a/a2/Radioheadthekingoflimbs.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Radiohead",
     album: "A Moon Shaped Pool",
     mufaj: "Alternative rock",
     megjelenes: 2016,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/6/6a/Amoonshapedpool.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/6/6a/Amoonshapedpool.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Depeche Mode",
     album: "Black Celebration",
     mufaj: "Synthpop",
     megjelenes: 1986,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/2/25/Depeche_Mode_-_Black_Celebration.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/2/25/Depeche_Mode_-_Black_Celebration.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Depeche Mode",
     album: "Music for the Masses",
     mufaj: "Synthpop",
     megjelenes: 1987,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/8/82/Depeche_Mode_-_Music_for_the_Masses.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/8/82/Depeche_Mode_-_Music_for_the_Masses.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Depeche Mode",
     album: "Violator",
     mufaj: "Synthpop",
     megjelenes: 1990,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/9/92/Depeche_Mode_-_Violator.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/9/92/Depeche_Mode_-_Violator.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Depeche Mode",
     album: "Songs of Faith and Devotion",
     mufaj: "Synthpop",
     megjelenes: 1993,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/7/76/Depeche_Mode_-_Songs_of_Faith_and_Devotion.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/7/76/Depeche_Mode_-_Songs_of_Faith_and_Devotion.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
   {
     eloado: "Depeche Mode",
     album: "Ultra",
     mufaj: "Synthpop",
     megjelenes: 1997,
-    boritokep: "https://upload.wikimedia.org/wikipedia/en/2/2a/Depeche_Mode_-_Ultra.png",
+    boritokep:
+      "https://upload.wikimedia.org/wikipedia/en/2/2a/Depeche_Mode_-_Ultra.png",
     dalok: [{}],
     keszlet: 0,
     ar: 0,
-	leiras: ""
+    leiras: "",
   },
 ];
 
@@ -557,5 +607,9 @@ export const FELHASZNALOK = [
 ];
 
 export const PARTNEREIK = [
-    {nev: "GG Store", link: "https://patrisarose.github.io/WebAruhaz/GamerWebshop/", banner: "image/gg.jpg"},
-]
+  {
+    nev: "GG Store",
+    link: "https://patrisarose.github.io/WebAruhaz/GamerWebshop/",
+    banner: "image/gg.jpg",
+  },
+];
