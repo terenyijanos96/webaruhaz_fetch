@@ -58,14 +58,19 @@ $(function () {
               <form class="cart">
                 <input
                   type="number"
-                  min="0"
-                  value="0"
+                  min="1"
+                  value="${obj.keszlet <= 0 ? 0 : 1}"
                   max="${obj.keszlet}"
                   id="count"
                   aria-label="darabszám kiválasztása"
                   ${obj.keszlet <= 0 ? 'disabled = "true"' : ""}
                 />
-                <input type="submit" value="Kosárba" aria-label="kosárba rakás" />
+                <input 
+                  type="submit" 
+                  aria-label="kosárba rakás"
+                  ${obj.keszlet <= 0 ? 'disabled = "true"' : ""} 
+                  ${obj.keszlet <= 0 ? 'value="Elfogyott"' : 'value="Kosárba"'} 
+                />
               </form>
             </div>
           </div>
