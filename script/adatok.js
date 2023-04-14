@@ -296,7 +296,7 @@ export const ALBUMOK = [
       "Minor Threat",
     ],
     keszlet: 0,
-    ar: 0,
+    ar: 3000,
   },
   {
     id: "A13",
