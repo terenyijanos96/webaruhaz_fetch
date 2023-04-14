@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terényi János: Cd bolt</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/login.css" />
+    <link rel="icon" href="image/favicon.png" type="image/png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script/main.js" type="module"></script>
+    <style>
+      #login-article {
+        display: flex;
+        flex-direction: column;
+        gap: 25px
+      }
+
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+      }
+
+      #login-article .input-group input[type="text"],
+      #login-article .input-group input[type="password"] {
+        width: 50%;
+        height: 30px;
+      }
+
+      #login-article input[type="submit"] {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <div class="hamburger-menu-wrapper">
+        <div class="hamburger-menu"></div>
+      </div>
+      <a href="#" class="">Cd bolt</a>
+      <button>Bejelentkezés</button>
+      <button>Kosár</button>
+    </nav>
+    <header>
+      <h1>Cd bolt</h1>
+    </header>
+    <div class="column-layout">
+      <aside>
+        <nav id="sidebar-nav" aria-label="oldalsó menü">
+          <h2>Menü</h2>
+          <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <article id="login-article">
+        <h2>Üdvözöljük! Kérjük jelentkezzen be, vagy regisztráljon!</h2>
+        <section class="login">
+          <h3>Bejelentkezés</h3>
+          <form action="">
+            <div class="input-group">
+              <label for="username-input-login">Felhasználónév</label>
+              <input
+                type="text"
+                name="username"
+                id="username-input-login"
+                aria-label="felhasználónév megadása"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="password-input-login">Jelszó</label>
+              <input
+                type="password"
+                name="password"
+                id="password-input-login"
+                aria-label="jelszó megadása"
+                required
+              />
+            </div>
+            <input
+              type="submit"
+              value="Bejelentkezés"
+              aria-label="bejelentkezés"
+            />
+          </form>
+        </section>
+        <section class="register">
+          <h3>Regisztráció</h3>
+          <form action="">
+            <div class="input-group">
+              <label for="username-input-register">Felhasználónév</label>
+              <input
+                type="text"
+                name="username"
+                id="username-input-register"
+                aria-label="felhasználónév megadása"
+                pattern="[\w]+"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="password-input-register">Jelszó</label>
+              <input
+                type="password"
+                name="password"
+                id="password-input-register"
+                aria-label="jelszó megadása"
+                required
+              />
+            </div>
+            <input
+              type="submit"
+              value="Regisztráció"
+              aria-label="regisztráció"
+            />
+          </form>
+        </section>
+      </article>
+    </div>
+    <footer>Weboldalt készítette: Terényi János</footer>
+  </body>
+</html>
