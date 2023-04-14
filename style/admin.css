@@ -1,0 +1,38 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+    height: 25px;
+}
+
+input[type="text"], input[type="url"] {
+    width: 60ch;
+}
+
+input[type="number"] {
+  width: 10ch;
+}
+
+table {
+  width: 100%;
+  font-size: 15px;
+  overflow-x: scroll;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+}
+
+td {
+  word-wrap: break-word;
+}
+
+.tablecell-img {
+    width: 100px;
+}
+
