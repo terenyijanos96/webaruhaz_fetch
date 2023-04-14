@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.column-layout {
+  display: flex;
+  min-height: 1000px;
+}
+
+nav#main-nav {
+  top: 0;
+  position: sticky;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid black;
+  height: 50px;
+  padding: 0 15px;
+  gap: 10px;
+  z-index: 1;
+}
+
+nav#main-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav#main-nav a::before {
+  content: "📀";
+}
+
+header {
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  border-bottom: 3px solid black;
+  display: flex;
+}
+
+header::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url("https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Stockimo,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1483147729/amlkq1qbc0pqxngob9pz.jpg");
+  position: absolute;
+  top: 0;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 3px #000;
+  text-transform: uppercase;
+}
+
+.hamburger-menu-wrapper {
+  height: 38px;
+  width: 40px;
+  background-color: #ddd;
+  position: relative;
+  border: 3px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger-menu {
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%) rotate(0);
+  transition: transform 0.3s;
+}
+
+.hamburger-menu::after,
+.hamburger-menu,
+.hamburger-menu::before {
+  display: block;
+  position: absolute;
+  height: 3px;
+  background-color: #000;
+  border-radius: 3px;
+}
+
+.hamburger-menu::after,
+.hamburger-menu::before {
+  content: "";
+  width: 100%;
+}
+
+.hamburger-menu::before {
+  top: -200%;
+}
+
+.hamburger-menu::after {
+  top: 200%;
+}
+
+.hamburger-menu-wrapper:active .hamburger-menu,
+.hamburger-menu.rotate {
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+aside {
+  flex: 1;
+  background-color: #444;
+  border-right: 3px solid black;
+}
+
+aside h2 {
+  padding: 15px;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3px
+
+}
+
+aside ul li a {
+  color: #fff;
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: #222;
+  cursor: pointer;
+}
+
+aside ul li a:hover {
+  background-color: #555;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partner img {
+  width: 170px;
+}
+
+.partner a {
+  color: #fff;
+}
+
+article {
+  flex: 3;
+  background-color: #666;
+  padding: 15px;
+}
+
+article h2 {
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid black;
+  height: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .column-layout {
+    display: block;
+  }
+  aside {
+    flex: 0;
+    padding: 15px 0;
+    width: 0;
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+    top: 50px;
+  }
+
+  aside.show {
+    width: 300px;
+    transition: width 0.3s;
+  }
+
+  aside {
+    width: 0;
+    transition: width 0.3s;
+  }
+
+  .hamburger-menu-wrapper {
+    display: block;
+  }
+}
