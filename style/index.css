@@ -116,7 +116,30 @@ aside {
   flex: 1;
   background-color: #444;
   border-right: 3px solid black;
+}
+
+aside h2 {
   padding: 15px;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3px
+
+}
+
+aside ul li a {
+  color: #fff;
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: #222;
+  cursor: pointer;
+}
+
+aside ul li a:hover {
+  background-color: #555;
 }
 
 .partner {
@@ -137,6 +160,10 @@ article {
   flex: 3;
   background-color: #666;
   padding: 15px;
+}
+
+article h2 {
+  margin-bottom: 15px;
 }
 
 .cards {
