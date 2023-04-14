@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terényi János: Cd bolt</title>
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/login.css" />
     <link rel="icon" href="image/favicon.png" type="image/png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="script/main.js" type="module"></script>
@@ -51,11 +52,8 @@
         <nav id="sidebar-nav" aria-label="oldalsó menü">
           <h2>Menü</h2>
           <ul>
-            <li>Összes cd</li>
             <li><a href="index.html">Főoldal</a></li>
             <li><a href="admin.html">Admin</a></li>
-            <li><a href="login.html">Bejelentkezés</a></li>
-            <li><a href="cart.html">Kosár</a></li>
           </ul>
         </nav>
       </aside>
@@ -71,6 +69,7 @@
                 name="username"
                 id="username-input-login"
                 aria-label="felhasználónév megadása"
+                required
               />
             </div>
             <div class="input-group">
@@ -80,6 +79,7 @@
                 name="password"
                 id="password-input-login"
                 aria-label="jelszó megadása"
+                required
               />
             </div>
             <input
@@ -99,6 +99,8 @@
                 name="username"
                 id="username-input-register"
                 aria-label="felhasználónév megadása"
+                pattern="[\w]+"
+                required
               />
             </div>
             <div class="input-group">
@@ -108,6 +110,7 @@
                 name="password"
                 id="password-input-register"
                 aria-label="jelszó megadása"
+                required
               />
             </div>
             <input

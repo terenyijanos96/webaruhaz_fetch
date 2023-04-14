@@ -5,40 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terényi János: Cd bolt</title>
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/admin.css" />
     <link rel="icon" href="image/favicon.png" type="image/png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="script/main.js" type="module"></script>
-    <style>
-      table {
-        width: 100%;
-        font-size: 15px;
-        overflow-x: scroll;
-      }
-
-      table,
-      th,
-      td {
-        border: 1px solid white;
-        border-collapse: collapse;
-      }
-
-      td {
-        max-width: min-content;
-        min-width: min-content;
-        width: min-content;
-        word-wrap: break-word;
-      }
-
-      .input-group {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-      }
-
-      .admin-article form {
-      }
-    </style>
   </head>
   <body>
     <nav id="main-nav">
@@ -90,7 +61,7 @@
             <input type="text" id="input-genre" name="mufaj" pattern="[\wÁÉÍÓÖŐÚÜŰáéíóöőúüű\-]+" required/>
           </div>
           <div class="input-group">
-            <label for="input-relase">Megjelenés</label>
+            <label for="input-relase">Megjelenés éve</label>
             <input
               type="number"
               id="input-relase"
@@ -102,11 +73,11 @@
             />
           </div>
           <div class="input-group">
-            <label for="input-price">Ár</label>
+            <label for="input-price">Ár (Ft)</label>
             <input type="number" id="input-price" min="1" value="1" name="ar" required/>
           </div>
           <div class="input-group">
-            <label for="input-stock">Készlet</label>
+            <label for="input-stock">Készlet (db)</label>
             <input
               type="number"
               id="input-stock"
@@ -132,8 +103,8 @@
               <th>Előadó</th>
               <th>Műfaj</th>
               <th>Megjelenés</th>
-              <th>Ár</th>
-              <th>Készlet</th>
+              <th>Ár (Ft)</th>
+              <th>Készlet (db)</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -141,6 +112,5 @@
       </article>
     </div>
     <footer>Weboldalt készítette: Terényi János</footer>
-
   </body>
 </html>
