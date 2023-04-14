@@ -12,22 +12,106 @@ $(function () {
   kartyakLegeneralasa();
   partnereinkLegeneralasa();
   tablazatLegeneralasa();
-  $("#admin-article form").submit(function(e){
-    e.preventDefault()
-    ujAlbumFelvitele()
+  $("#admin-article form").submit(function (e) {
+    e.preventDefault();
+    ujAlbumFelvitele();
   });
-
 
   function kartyakLegeneralasa() {
     let kartyak = $(".cards");
     for (let i = 0; i < ALBUMOK.length; i++) {
       kartyak.append(kartyaLetrehozasaObjektumbol(ALBUMOK[i]));
     }
+    $(".cards button").click(function (e) {
+      let overlay = $(".overlay");
+      $("body").toggleClass("overlayed");
+      overlay.toggleClass("showed");
+      overlay.html(modalboxLetrehozasa(e));
+
+      $(".modalbox-header button").click(function() {
+        $("body").removeClass("overlayed");
+        $(".overlay").removeClass("showed");
+      });
+    });
+
+
   }
+
+  function findParentElements(target, goalElementClassName) {
+    do {
+      target = target.parentNode;
+    } while (!target.classList.contains(goalElementClassName));
+
+    return target;
+  }
+
+  function modalboxLetrehozasa(e) {
+    let target_id = findParentElements(e.target, "card").id;
+    let i = 0;
+
+    while (target_id != ALBUMOK[i].id) {
+      i++;
+    }
+    let lista_txt = "";
+    for (let item of ALBUMOK[i].dalok) {
+      lista_txt += `<li>${item}</li>`;
+    }
+
+    return `<div class="modalbox">
+  <div class="modalbox-header">
+    <h3>${ALBUMOK[i].eloado} - ${ALBUMOK[i].album}</h3>
+    <button aria-label="Kilépés"></button>
+  </div>
+
+<div class="modalbox-body">
+    <div class="modalbox-image-contrainer">
+      <img
+        src="${ALBUMOK[i].boritokep}"
+        alt=""
+      />
+    </div>
+    <div class="modalbox-album-content">
+      <h4>Album információk</h4>
+      <table>
+        <tbody>
+          <tr>
+            <th>Előadó:</th>
+            <td>${ALBUMOK[i].eloado}</td>
+          </tr>
+          <tr>
+            <th>Album:</th>
+            <td>${ALBUMOK[i].album}</td>
+          </tr>
+          <tr>
+            <th>Műfaj:</th>
+            <td>${ALBUMOK[i].mufaj}</td>
+          </tr>
+          <tr>
+            <th>Megjelenés:</th>
+            <td>${ALBUMOK[i].megjelenes}</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>Számok listája</h4>
+      <ol>
+        ${lista_txt}
+      </ol>
+    </div>     
+    </div>
+    <div class="modalbox-footer">
+    <div class="modalbox-footer-stock">
+    Készlet: ${ALBUMOK[i].keszlet} db
+    </div>
+    
+    </div>
+  </div>`
+  }
+
+
 
   function kartyaLetrehozasaObjektumbol(obj) {
     return `
-          <div class="card">
+          <div class="card" id="${obj.id}">
             <img
               src="${obj.boritokep}"
               alt="${obj.eloado}: ${obj.album} borítóképe"
@@ -110,7 +194,7 @@ $(function () {
     return `
       <tr>
         <td class="tablecell-id">${obj.id}</td>
-        <td class="tablecell-img"><img src="${obj.boritokep}" width="100" height="100" alt="${obj.eloado}: ${obj.album}"></td>
+        <td class="tablecell-img"><img src="${obj.boritokep}" alt="${obj.eloado}: ${obj.album}"></td>
         <td class="tablecell-artist">${obj.eloado}</td>
         <td class="tablecell-album">${obj.album}</td>
         <td class="tablecell-genre">${obj.mufaj}</td>
