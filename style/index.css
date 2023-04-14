@@ -21,23 +21,27 @@ body.overlayed {
 .modalbox {
   position: relative;
   top: 25px;
-  background-color: #fff;
+  background-color: #ccc;
+  max-width: 1000px;
   height: 800px;
-  width: 1000px;
+  width: 100%;
   box-shadow: 3px 3px 3px #000;
   display: flex;
   flex-direction: column;
   color: #000;
+  overflow: auto;
+
 }
+
 .modalbox-header {
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: red;
+  background-color: #222;
 }
 
 .modalbox-header h3 {
-  color: black;
+  color: #fff;
   padding: 25px 0;
   text-align: center;
   font-size: 2rem;
@@ -64,14 +68,15 @@ body.overlayed {
 
 .modalbox-body {
   display: flex;
-  height: 100%;
+  flex: 1
 }
 
 .modalbox-image-contrainer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex: 1;
+  padding-top: 50px;
 }
 
 .modalbox-image-contrainer img {
@@ -81,6 +86,40 @@ body.overlayed {
 
 .modalbox-album-content {
   flex: 1;
+  padding: 15px;
+}
+
+.modalbox-album-content table,
+.modalbox-album-content td,
+.modalbox-album-content th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.modalbox-album-content td,
+.modalbox-album-content th {
+  padding: 10px 10px;
+}
+
+.modalbox-album-content h4 {
+  font-size: 1.5rem;
+  padding: 15px 0;
+}
+
+.modalbox-album-content ol {
+  margin-left: 25px
+}
+
+.modalbox-album-content ol li {
+  padding: 4px 0;
+}
+
+.modalbox-footer {
+  background-color: #999;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  padding: 25px;
 }
 
 .cards {
@@ -176,4 +215,18 @@ body.overlayed {
 .card-footer .cart input[type="submit"] {
   width: 100%;
   padding: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .modalbox-body {
+    flex-direction: column;
+  }
+
+  .modalbox-album-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+
 }
