@@ -38,8 +38,8 @@ function tablazatFejlecLetrehozasa() {
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">id</div>
                   <div class="sorting-button-group">
-                    <button orderby="id" direction="asc" >&#x2C4;</button>
-                    <button orderby="id" direction="desc">&#x2C5;</button>
+                    <button orderby="id" direction="desc" >&#x2C4;</button>
+                    <button orderby="id" direction="asc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -52,8 +52,8 @@ function tablazatFejlecLetrehozasa() {
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">Előadó</div>
                   <div class="sorting-button-group">
-                    <button orderby="eloado" direction="asc" >&#x2C4;</button>
-                    <button orderby="eloado" direction="desc">&#x2C5;</button>
+                    <button orderby="eloado" direction="desc" >&#x2C4;</button>
+                    <button orderby="eloado" direction="asc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -61,8 +61,8 @@ function tablazatFejlecLetrehozasa() {
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">Album</div>
                   <div class="sorting-button-group">
-                    <button orderby="album" direction="asc" >&#x2C4;</button>
-                    <button orderby="album" direction="desc">&#x2C5;</button>
+                    <button orderby="album" direction="desc" >&#x2C4;</button>
+                    <button orderby="album" direction="asc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -70,8 +70,8 @@ function tablazatFejlecLetrehozasa() {
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">Műfaj</div>
                   <div class="sorting-button-group">
-                    <button orderby="mufaj" direction="asc" >&#x2C4;</button>
-                    <button orderby="mufaj" direction="desc">&#x2C5;</button>
+                    <button orderby="mufaj" direction="desc" >&#x2C4;</button>
+                    <button orderby="mufaj" direction="asc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -79,8 +79,8 @@ function tablazatFejlecLetrehozasa() {
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">Megjelenés</div>
                   <div class="sorting-button-group">
-                    <button orderby="megjelenes" direction="asc" >&#x2C4;</button>
-                    <button orderby="megjelenes" direction="desc">&#x2C5;</button>
+                    <button orderby="megjelenes" direction="desc" >&#x2C4;</button>
+                    <button orderby="megjelenes" direction="asc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -88,8 +88,8 @@ function tablazatFejlecLetrehozasa() {
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">Ár (Ft)</div>
                   <div class="sorting-button-group">
-                    <button orderby="ar" direction="asc" >&#x2C4;</button>
-                    <button orderby="ar" direction="desc">&#x2C5;</button>
+                    <button orderby="ar" direction="desc" >&#x2C4;</button>
+                    <button orderby="ar" direction="asc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -97,8 +97,8 @@ function tablazatFejlecLetrehozasa() {
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">Készlet (db)</div>
                   <div class="sorting-button-group">
-                    <button orderby="keszlet" direction="asc" >&#x2C4;</button>
-                    <button orderby="keszlet" direction="desc">&#x2C5;</button>
+                    <button orderby="keszlet" direction="desc" >&#x2C4;</button>
+                    <button orderby="keszlet" direction="asc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
