@@ -142,6 +142,11 @@ aside ul li a:hover {
   background-color: #555;
 }
 
+aside h3 {
+  text-align: center;
+  padding: 10px;
+}
+
 .partner {
   display: flex;
   flex-direction: column;
