@@ -1,7 +1,7 @@
 import { ALBUMOK } from "./adatok.js";
 
 $(function () {
-    adminFormLetrehozasa()
+  adminFormLetrehozasa();
   $("#admin-article form").submit(function (e) {
     e.preventDefault();
     ujAlbumFelvitele();
@@ -165,8 +165,23 @@ function ujAlbumFelvitele() {
 }
 
 function adminFormLetrehozasa() {
-    let form = $("form")
-    form.append(adminFormUjAdatFelvetelehez())
+  let form = $("form");
+  let muveletValaszto = $("#admin-article input");
+
+  muveletValaszto.change(function (e) {
+    let target = e.currentTarget;
+    let txt = ""
+    switch (target.id) {
+      case "muvelet-valaszto-uj":
+        txt = adminFormUjAdatFelvetelehez();
+        break;
+      case "muvelet-valaszto-torol":
+        txt = adminFormUjAdatFelvetelehez();
+        break;
+    }
+    form.html(txt);
+  });
+  
 }
 
 function adminFormUjAdatFelvetelehez() {
@@ -251,3 +266,5 @@ function adminFormUjAdatFelvetelehez() {
     aria-label="Új album felvitele"
   />`;
 }
+
+

@@ -1,4 +1,4 @@
-.input-group {
+form .input-group {
   display: flex;
   flex-direction: column;
 }
