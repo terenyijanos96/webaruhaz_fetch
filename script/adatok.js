@@ -856,7 +856,7 @@ export const ALBUMOK = [
     id: "A36",
     eloado: "System of a Down",
     album: "Toxicity",
-    mufaj: "Industrial rock",
+    mufaj: "Alternative metal",
     megjelenes: 2000,
     boritokep:
       "https://upload.wikimedia.org/wikipedia/en/6/64/SystemofaDownToxicityalbumcover.jpg",
