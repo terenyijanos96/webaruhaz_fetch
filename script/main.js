@@ -11,6 +11,12 @@ $(function () {
 
   kartyakLegeneralasa();
   partnereinkLegeneralasa();
+  tablazatLegeneralasa();
+  $("#admin-article form").submit(function(e){
+    e.preventDefault()
+    ujAlbumFelvitele()
+  });
+
 
   function kartyakLegeneralasa() {
     let kartyak = $(".cards");
@@ -92,5 +98,46 @@ $(function () {
         <a href="${obj.link}" target="_blank">${obj.nev}</a>
       </div>
         `;
+  }
+
+  function tablazatLegeneralasa() {
+    let tablazat = $("#admin-article tbody");
+    for (let i = 0; i < ALBUMOK.length; i++) {
+      tablazat.append(adminTablazatLetrehozasaObjektumbol(ALBUMOK[i]));
+    }
+  }
+  function adminTablazatLetrehozasaObjektumbol(obj) {
+    return `
+      <tr>
+        <td class="tablecell-id">${obj.id}</td>
+        <td class="tablecell-img"><img src="${obj.boritokep}" width="100" height="100" alt="${obj.eloado}: ${obj.album}"></td>
+        <td class="tablecell-artist">${obj.eloado}</td>
+        <td class="tablecell-album">${obj.album}</td>
+        <td class="tablecell-genre">${obj.mufaj}</td>
+        <td class="tablecell-released">${obj.megjelenes}</td>
+        <td class="tablecell-price">${obj.ar} Ft</td>
+        <td class="tablecell-stock">${obj.keszlet} db</td>
+      </tr>
+    `;
+  }
+  function ujAlbumFelvitele() {
+    let inputok = $("#admin-article input:not(input[type='submit'])");
+    let obj = {};
+    for (let i = 0; i < inputok.length; i++) {
+      for (const key in ALBUMOK[0]) {
+        if (inputok[i].name === key) {
+          let ertek = inputok[i].value;
+          if (inputok[i].type === "number") {
+            ertek = parseInt(ertek);
+          }
+          console.log(inputok[i]);
+          obj[key] = ertek;
+        }
+        obj.id =
+          "A" + (parseInt(ALBUMOK[ALBUMOK.length - 1].id.substring(1)) + 1);
+      }
+    }
+    ALBUMOK.push(obj);
+    tablazatLegeneralasa();
   }
 });

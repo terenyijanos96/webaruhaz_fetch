@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terényi János: Cd bolt</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="icon" href="image/favicon.png" type="image/png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script/main.js" type="module"></script>
+    <style>
+      table {
+        width: 100%;
+        font-size: 15px;
+        overflow-x: scroll;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid white;
+        border-collapse: collapse;
+      }
+
+      td {
+        max-width: min-content;
+        min-width: min-content;
+        width: min-content;
+        word-wrap: break-word;
+      }
+
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+
+      .admin-article form {
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <div class="hamburger-menu-wrapper">
+        <div class="hamburger-menu"></div>
+      </div>
+      <a href="#" class="">Cd bolt</a>
+      <button>Bejelentkezés</button>
+      <button>Regisztráció</button>
+      <button>Kosár</button>
+    </nav>
+    <header>
+      <h1>Cd bolt</h1>
+    </header>
+    <div class="column-layout">
+      <aside>
+        <nav id="sidebar-nav" aria-label="oldalsó menü">
+          <h2>Menü</h2>
+          <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="admin.html">Admin</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <article id="admin-article">
+        <h2>Admin</h2>
+        <form>
+          <div class="input-group">
+            <label for="input-cover">Borítókép URL hozzáadása</label>
+            <input
+              type="url"
+              name="boritokep"
+              id="input-cover"
+              aria-label="Borítókép URL hozzáadása"
+              pattern="^https?:\/{2}[\w\/\.]+\.(jpg|jpeg|png|webp|gif)$"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="input-artist">Előadó</label>
+            <input type="text" id="input-artist" name="eloado" pattern="[\wÁÉÍÓÖŐÚÜŰáéíóöőúüű]+( [\wÁÉÍÓÖŐÚÜŰáéíóöőúüű]+)*" required/>
+          </div>
+          <div class="input-group">
+            <label for="input-album">Album</label>
+            <input type="text" id="input-album" name="album" pattern="[\wÁÉÍÓÖŐÚÜŰáéíóöőúüű]+( [\wÁÉÍÓÖŐÚÜŰáéíóöőúüű]+)*" required/>
+          </div>
+          <div class="input-group">
+            <label for="input-genre">Műfaj</label>
+            <input type="text" id="input-genre" name="mufaj" pattern="[\wÁÉÍÓÖŐÚÜŰáéíóöőúüű\-]+" required/>
+          </div>
+          <div class="input-group">
+            <label for="input-relase">Megjelenés</label>
+            <input
+              type="number"
+              id="input-relase"
+              min="1900"
+              max="2023"
+              value="1900"
+              name="megjelenes"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="input-price">Ár</label>
+            <input type="number" id="input-price" min="1" value="1" name="ar" required/>
+          </div>
+          <div class="input-group">
+            <label for="input-stock">Készlet</label>
+            <input
+              type="number"
+              id="input-stock"
+              min="0"
+              value="0"
+              name="keszlet"
+              required
+            />
+          </div>
+          <input
+            type="submit"
+            value="Felvitel"
+            aria-label="Új album felvitele"
+          />
+        </form>
+
+        <table>
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>Kép</th>
+              <th>Album</th>
+              <th>Előadó</th>
+              <th>Műfaj</th>
+              <th>Megjelenés</th>
+              <th>Ár</th>
+              <th>Készlet</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+    </div>
+    <footer>Weboldalt készítette: Terényi János</footer>
+
+  </body>
+</html>
