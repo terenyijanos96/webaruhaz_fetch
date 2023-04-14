@@ -25,16 +25,43 @@ nav#main-nav {
   height: 50px;
   padding: 0 15px;
   gap: 10px;
+  z-index: 1;
+}
+
+nav#main-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav#main-nav a::before {
+  content: "📀";
 }
 
 header {
   height: 250px;
-  background-color: rgb(255, 255, 255);
-  display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: rgb(255, 255, 255);
   border-bottom: 3px solid black;
+  display: flex;
+}
+
+header::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url("https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Stockimo,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1483147729/amlkq1qbc0pqxngob9pz.jpg");
+  position: absolute;
+  top: 0;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 3px #000;
+  text-transform: uppercase;
 }
 
 .hamburger-menu-wrapper {
@@ -53,7 +80,7 @@ header {
   left: 50%;
   width: 60%;
   transform: translate(-50%, -50%) rotate(0);
-  transition: transform 0.6s;
+  transition: transform 0.3s;
 }
 
 .hamburger-menu::after,
@@ -103,7 +130,7 @@ aside {
 }
 
 .partner a {
-  color: #fff
+  color: #fff;
 }
 
 article {
@@ -153,7 +180,7 @@ article {
 
 .card table {
   border-spacing: 15px 5px;
-  flex: 1
+  flex: 1;
 }
 
 .card table th,
@@ -167,6 +194,7 @@ article {
 
 .card table button {
   width: 100%;
+  cursor: pointer;
 }
 
 .card-footer {
@@ -216,17 +244,27 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+  .column-layout {
+    display: block;
+  }
   aside {
     flex: 0;
-    border: 0;
     padding: 15px 0;
     width: 0;
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+    top: 50px;
   }
 
   aside.show {
-    flex: 2;
-    padding: 15px;
-    border-right: 3px solid black;
+    width: 300px;
+    transition: width 0.3s;
+  }
+
+  aside {
+    width: 0;
+    transition: width 0.3s;
   }
 
   .hamburger-menu-wrapper {
