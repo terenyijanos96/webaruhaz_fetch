@@ -12,9 +12,18 @@ function tablazatLegeneralasa() {
   let thead = $("#admin-article thead");
   let tbody = $("#admin-article tbody");
   thead.html(tablazatFejlecLetrehozasa())
+  tbody.html("")
   for (let i = 0; i < ALBUMOK.length; i++) {
     tbody.append(adminTablazatLetrehozasaObjektumbol(ALBUMOK[i]));
   }
+  let gombok = $("thead button")
+  for (let i = 0; i < gombok.length; i++) {
+    const gomb = gombok[i];
+    $(gomb).click(function(){
+        rendezes(ALBUMOK, gomb.attributes["orderby"].value, gomb.attributes["direction"].value)
+        tablazatLegeneralasa();
+    }) 
+  }  
 }
 
 function tablazatFejlecLetrehozasa(){
@@ -23,8 +32,8 @@ function tablazatFejlecLetrehozasa(){
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">id</div>
                   <div class="sorting-button-group">
-                    <button>&#x2C4;</button>
-                    <button>&#x2C5;</button>
+                    <button orderby="id" direction="asc" >&#x2C4;</button>
+                    <button orderby="id" direction="desc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -32,17 +41,8 @@ function tablazatFejlecLetrehozasa(){
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">Kép</div>
                   <div class="sorting-button-group">
-                    <button>&#x2C4;</button>
-                    <button>&#x2C5;</button>
-                  </div>
-                </div>
-              </th>
-              <th class="admin-table-album">
-                <div class="admin-table-head-content">
-                  <div class="admin-table-head-title">Album</div>
-                  <div class="sorting-button-group">
-                    <button>&#x2C4;</button>
-                    <button>&#x2C5;</button>
+                    <button orderby="boritokep" direction="asc" >&#x2C4;</button>
+                    <button orderby="boritokep" direction="desc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -50,8 +50,17 @@ function tablazatFejlecLetrehozasa(){
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">Előadó</div>
                   <div class="sorting-button-group">
-                    <button>&#x2C4;</button>
-                    <button>&#x2C5;</button>
+                    <button orderby="eloado" direction="asc" >&#x2C4;</button>
+                    <button orderby="eloado" direction="desc">&#x2C5;</button>
+                  </div>
+                </div>
+              </th>
+              <th class="admin-table-album">
+                <div class="admin-table-head-content">
+                  <div class="admin-table-head-title">Album</div>
+                  <div class="sorting-button-group">
+                    <button orderby="album" direction="asc" >&#x2C4;</button>
+                    <button orderby="album" direction="desc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -59,8 +68,8 @@ function tablazatFejlecLetrehozasa(){
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">Műfaj</div>
                   <div class="sorting-button-group">
-                    <button>&#x2C4;</button>
-                    <button>&#x2C5;</button>
+                    <button orderby="mufaj" direction="asc" >&#x2C4;</button>
+                    <button orderby="mufaj" direction="desc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -68,8 +77,8 @@ function tablazatFejlecLetrehozasa(){
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">Megjelenés</div>
                   <div class="sorting-button-group">
-                    <button>&#x2C4;</button>
-                    <button>&#x2C5;</button>
+                    <button orderby="megjelenes" direction="asc" >&#x2C4;</button>
+                    <button orderby="megjelenes" direction="desc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -77,8 +86,8 @@ function tablazatFejlecLetrehozasa(){
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">Ár (Ft)</div>
                   <div class="sorting-button-group">
-                    <button>&#x2C4;</button>
-                    <button>&#x2C5;</button>
+                    <button orderby="ar" direction="asc" >&#x2C4;</button>
+                    <button orderby="ar" direction="desc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -86,8 +95,8 @@ function tablazatFejlecLetrehozasa(){
                 <div class="admin-table-head-content">
                   <div class="admin-table-head-title">Készlet (db)</div>
                   <div class="sorting-button-group">
-                    <button>&#x2C4;</button>
-                    <button>&#x2C5;</button>
+                    <button orderby="keszlet" direction="asc" >&#x2C4;</button>
+                    <button orderby="keszlet" direction="desc">&#x2C5;</button>
                   </div>
                 </div>
               </th>
@@ -111,7 +120,6 @@ function adminTablazatLetrehozasaObjektumbol(obj) {
 }
 
 function rendezes(lista, mezo, irany){
-    console.log("asd")
     let szorzo = undefined;
     switch (irany) {
       case "asc":
