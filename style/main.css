@@ -35,10 +35,17 @@ nav#main-nav {
 nav#main-nav a {
   color: white;
   text-decoration: none;
+  flex: 1
 }
 
 nav#main-nav a::before {
   content: "📀";
+}
+
+nav#main-nav button {
+  height: 30px;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 header {
