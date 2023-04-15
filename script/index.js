@@ -1,19 +1,36 @@
-import { ALBUMOK} from "./adatok.js";
+let lista = [];
 
 $(function(){
-  kartyakLegeneralasa()
+  let vegpont = "script/adatok.json";
+  adatBeolvas(vegpont, listaInicializalasa, "albumok");
 })
+
+function adatBeolvas(vegpont, callbackFv, adatLista) {
+  fetch(vegpont, {
+    method: "GET",
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      callbackFv(data[adatLista]);
+    })
+    .catch((err) => console.log(err));
+}
+
+function listaInicializalasa(data){
+  lista = data
+  kartyakLegeneralasa()
+}
 
 function kartyakLegeneralasa() {
   let kartyak = $(".cards");
-  for (let i = 0; i < ALBUMOK.length; i++) {
-    kartyak.append(kartyaLetrehozasaObjektumbol(ALBUMOK[i]));
+  for (let i = 0; i < lista.length; i++) {
+    kartyak.append(kartyaLetrehozasaObjektumbol(lista[i]));
   }
   $(".cards button").click(function (e) {
     let overlay = $(".overlay");
     $("body").toggleClass("overlayed");
     overlay.toggleClass("showed");
-    overlay.html(modalboxLetrehozasa(e));
+    overlay.html(modalboxLetrehozasa(lista, e));
 
     $(".modalbox-header button").click(function () {
       $("body").removeClass("overlayed");
@@ -88,28 +105,28 @@ function findParentElements(target, goalElementClassName) {
   return target;
 }
 
-function modalboxLetrehozasa(e) {
+function modalboxLetrehozasa(lista, e) {
   let target_id = findParentElements(e.target, "card").id;
   let i = 0;
 
-  while (target_id != ALBUMOK[i].id) {
+  while (target_id != lista[i].id) {
     i++;
   }
   let lista_txt = "";
-  for (let item of ALBUMOK[i].dalok) {
+  for (let item of lista[i].dalok) {
     lista_txt += `<li>${item}</li>`;
   }
 
   return `<div class="modalbox">
   <div class="modalbox-header">
-    <h3>${ALBUMOK[i].eloado} - ${ALBUMOK[i].album}</h3>
+    <h3>${lista[i].eloado} - ${lista[i].album}</h3>
     <button aria-label="Kilépés"></button>
   </div>
   
   <div class="modalbox-body">
     <div class="modalbox-image-contrainer">
       <img
-        src="${ALBUMOK[i].boritokep}"
+        src="${lista[i].boritokep}"
         alt=""
       />
     </div>
@@ -119,19 +136,19 @@ function modalboxLetrehozasa(e) {
         <tbody>
           <tr>
             <th>Előadó:</th>
-            <td>${ALBUMOK[i].eloado}</td>
+            <td>${lista[i].eloado}</td>
           </tr>
           <tr>
             <th>Album:</th>
-            <td>${ALBUMOK[i].album}</td>
+            <td>${lista[i].album}</td>
           </tr>
           <tr>
             <th>Műfaj:</th>
-            <td>${ALBUMOK[i].mufaj}</td>
+            <td>${lista[i].mufaj}</td>
           </tr>
           <tr>
             <th>Megjelenés:</th>
-            <td>${ALBUMOK[i].megjelenes}</td>
+            <td>${lista[i].megjelenes}</td>
           </tr>
         </tbody>
       </table>
@@ -143,7 +160,7 @@ function modalboxLetrehozasa(e) {
     </div>
     <div class="modalbox-footer">
     <div class="modalbox-footer-stock">
-    Készlet: ${ALBUMOK[i].keszlet} db
+    Készlet: ${lista[i].keszlet} db
     </div>
     </div>
   </div>`;
