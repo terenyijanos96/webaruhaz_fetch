@@ -1,9 +1,17 @@
-import { ALBUMOK, FELHASZNALOK, PARTNEREIK } from "./adatok.js";
+import { adatBeolvas } from "./fetch.js";
+
+let lista = []
 
 $(function () {
+  let vegpont = "script/adatok.json";
+  adatBeolvas(vegpont, listaInicializalasa);
   hamburgerMenuGombBeallitasa()
-  partnereinkLegeneralasa();
 })
+
+function listaInicializalasa(data) {
+  lista = data;
+  partnereinkLegeneralasa(lista.partnereink);
+}
 
 function hamburgerMenuGombBeallitasa(){
   let hamburger = $("nav#main-nav .hamburger-menu-wrapper");
@@ -15,11 +23,11 @@ function hamburgerMenuGombBeallitasa(){
   });
 }
 
-function partnereinkLegeneralasa() {
+function partnereinkLegeneralasa(partner_lista) {
   let aside = $("aside");
   aside.append("<h3>Partnereink:</h3>");
-  for (let i = 0; i < PARTNEREIK.length; i++) {
-    aside.append(partnerLetrehozasaObjektumbok(PARTNEREIK[i]));
+  for (let i = 0; i < partner_lista.length; i++) {
+    aside.append(partnerLetrehozasaObjektumbok(partner_lista[i]));
   }
 }
 

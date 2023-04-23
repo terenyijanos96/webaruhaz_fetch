@@ -1,33 +1,42 @@
-import { ALBUMOK } from "./adatok.js";
+import { adatBeolvas } from "./fetch.js";
+
+let lista = [];
 
 $(function () {
+  let vegpont = "script/adatok.json";
+  adatBeolvas(vegpont, listaInicializalasa);
 
   $("#admin-article form").submit(function (e) {
     e.preventDefault();
-    ujAlbumFelvitele();
+    ujAlbumFelvitele(lista.albumok);
   });
-
-  tablazatLegeneralasa();
 });
 
-function tablazatLegeneralasa() {
+function listaInicializalasa(data) {
+  lista = data;
+  tablazatLegeneralasa(lista.albumok);
+}
+
+function tablazatLegeneralasa(album_lista) {
   let thead = $("#admin-article thead");
   let tbody = $("#admin-article tbody");
   thead.html(tablazatFejlecLetrehozasa());
   tbody.html("");
-  for (let i = 0; i < ALBUMOK.length; i++) {
-    tbody.append(adminTablazatLetrehozasaObjektumbol(ALBUMOK[i]));
+
+  for (let i = 0; i < album_lista.length; i++) {
+    tbody.append(adminTablazatLetrehozasaObjektumbol(album_lista[i]));
   }
+
   let gombok = $("thead button");
   for (let i = 0; i < gombok.length; i++) {
     const gomb = gombok[i];
     $(gomb).click(function () {
       rendezes(
-        ALBUMOK,
+        album_lista,
         gomb.attributes["orderby"].value,
         gomb.attributes["direction"].value
       );
-      tablazatLegeneralasa();
+      tablazatLegeneralasa(album_lista);
     });
   }
 }
@@ -143,26 +152,21 @@ function rendezes(lista, mezo, irany) {
   });
 }
 
-function ujAlbumFelvitele() {
+function ujAlbumFelvitele(album_lista) {
   let inputok = $("#admin-article form input:not(input[type='submit'])");
   let obj = {};
   for (let i = 0; i < inputok.length; i++) {
-    for (const key in ALBUMOK[0]) {
+    for (const key in album_lista[0]) {
       if (inputok[i].name === key) {
         let ertek = inputok[i].value;
         if (inputok[i].type === "number") {
           ertek = parseInt(ertek);
         }
-        console.log(inputok[i]);
         obj[key] = ertek;
       }
-      obj.id =
-        "A" + (parseInt(ALBUMOK[ALBUMOK.length - 1].id.substring(1)) + 1);
+      obj.id = "A" + (parseInt(album_lista[album_lista.length - 1].id.substring(1)) + 1);
     }
   }
-  ALBUMOK.push(obj);
-  tablazatLegeneralasa();
+  album_lista.push(obj);
+  tablazatLegeneralasa(lista);
 }
-
-
-
