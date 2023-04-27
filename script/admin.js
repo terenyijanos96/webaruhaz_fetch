@@ -111,6 +111,11 @@ function tablazatFejlecLetrehozasa() {
                   </div>
                 </div>
               </th>
+              <th class="admin-table-songs">
+              <div class="admin-table-head-content">
+                <div class="admin-table-head-title">Dalok</div>
+              </div>
+            </th>
             </tr>
           `;
 }
@@ -126,6 +131,11 @@ function adminTablazatLetrehozasaObjektumbol(obj) {
         <td class="tablecell-released">${obj.megjelenes}</td>
         <td class="tablecell-price">${obj.ar} Ft</td>
         <td class="tablecell-stock">${obj.keszlet} db</td>
+        <td class="tablecell-songs">
+          <div class="songs-wrapper" style="overflow-y: scroll; height: 100px">
+          ${obj.dalok.join("<br>")}
+          </div>
+        </td>
       </tr>
     `;
 }
