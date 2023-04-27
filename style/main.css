@@ -176,11 +176,11 @@ article {
   flex: 3;
   background-color: #666;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px
 }
 
-article h2 {
-  margin-bottom: 15px;
-}
 
 footer {
   background-color: #222;
@@ -191,7 +191,7 @@ footer {
   height: 50px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 855px) {
   .column-layout {
     display: block;
   }
