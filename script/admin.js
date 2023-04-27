@@ -164,19 +164,22 @@ function rendezes(lista, mezo, irany) {
 
 function ujAlbumFelvitele(album_lista) {
   let inputok = $("#admin-article form input:not(input[type='submit'])");
+  let input_dalok = $("#admin-article form textarea")
   let obj = {};
   for (let i = 0; i < inputok.length; i++) {
     for (const key in album_lista[0]) {
       if (inputok[i].name === key) {
-        let ertek = inputok[i].value;
+        let ertek = $(inputok[i]).val();
         if (inputok[i].type === "number") {
           ertek = parseInt(ertek);
         }
         obj[key] = ertek;
       }
-      obj.id = "A" + (parseInt(album_lista[album_lista.length - 1].id.substring(1)) + 1);
     }
   }
+
+  obj.id = "A" + (parseInt(album_lista[album_lista.length - 1].id.substring(1)) + 1);
+  obj.dalok = input_dalok.val().split("\n")
   album_lista.push(obj);
-  tablazatLegeneralasa(lista);
+  tablazatLegeneralasa(album_lista);
 }
