@@ -132,7 +132,7 @@ function adminTablazatLetrehozasaObjektumbol(obj) {
         <td class="tablecell-price">${obj.ar} Ft</td>
         <td class="tablecell-stock">${obj.keszlet} db</td>
         <td class="tablecell-songs">
-          <div class="songs-wrapper" style="overflow-y: scroll; height: 100px">
+          <div class="songs-wrapper">
           ${obj.dalok.join("<br>")}
           </div>
         </td>
