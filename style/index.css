@@ -30,7 +30,7 @@ body.overlayed {
   flex-direction: column;
   color: #000;
   overflow: auto;
-
+  border: 3px solid #111;
 }
 
 .modalbox-header {
@@ -218,6 +218,10 @@ body.overlayed {
 }
 
 @media screen and (max-width: 800px) {
+  .modalbox {
+    height: calc(100vh - 70px);
+  }
+
   .modalbox-body {
     flex-direction: column;
   }
