@@ -12,14 +12,19 @@ input[type="text"], input[type="url"] {
 }
 
 input[type="number"] {
-  width: 10ch;
+
+.table-wrapper {
+  overflow-x: scroll;
 }
 
 table {
   width: 100%;
   font-size: 15px;
-  overflow-x: scroll;
   font-size: clamp(0.8rem, 12%, 14px)
+}
+
+tr, td {
+  max-height: 75px;
 }
 
 table,
@@ -29,12 +34,18 @@ td {
   border-collapse: collapse;
 }
 
+th, td {
+  padding: 10px;
+}
+
 td {
   word-wrap: break-word;
+  
 }
 
 .tablecell-img {
     width: 75px;
+    
 }
 
 .tablecell-img img {
@@ -57,10 +68,11 @@ th .admin-table-head-content .admin-table-head-title {
     flex-direction: column;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 855px) {
     article {
       width: 100%;
       padding: 5px;
     }
+
 }
 
