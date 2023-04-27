@@ -1,16 +1,16 @@
 import { adatBeolvas } from "./fetch.js";
 
 let lista = []
+let vegpont = "http://localhost:3000/partnereink";
 
 $(function () {
-  let vegpont = "script/adatok.json";
   adatBeolvas(vegpont, listaInicializalasa);
   hamburgerMenuGombBeallitasa()
 })
 
 function listaInicializalasa(data) {
   lista = data;
-  partnereinkLegeneralasa(lista.partnereink);
+  partnereinkLegeneralasa(lista);
 }
 
 function hamburgerMenuGombBeallitasa(){

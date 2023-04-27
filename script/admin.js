@@ -1,20 +1,21 @@
-import { adatBeolvas } from "./fetch.js";
+import { adatBeolvas, adatFeltolt } from "./fetch.js";
 
 let lista = [];
+let vegpont = "http://localhost:3000/albumok";
 
 $(function () {
-  let vegpont = "script/adatok.json";
   adatBeolvas(vegpont, listaInicializalasa);
 
   $("#admin-article form").submit(function (e) {
     e.preventDefault();
-    ujAlbumFelvitele(lista.albumok);
+    ujAlbumFelvitele(lista);
   });
+
 });
 
 function listaInicializalasa(data) {
   lista = data;
-  tablazatLegeneralasa(lista.albumok);
+  tablazatLegeneralasa(lista);
 }
 
 function tablazatLegeneralasa(album_lista) {
@@ -180,6 +181,6 @@ function ujAlbumFelvitele(album_lista) {
 
   obj.id = "A" + (parseInt(album_lista[album_lista.length - 1].id.substring(1)) + 1);
   obj.dalok = input_dalok.val().split("\n")
-  album_lista.push(obj);
+  adatFeltolt(vegpont, obj)
   tablazatLegeneralasa(album_lista);
 }

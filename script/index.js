@@ -1,16 +1,16 @@
 import {adatBeolvas} from './fetch.js'
 
 let lista = [];
+let vegpont = "http://localhost:3000/albumok";
 
 $(function(){
-  let vegpont = "script/adatok.json";
   adatBeolvas(vegpont, listaInicializalasa);
 })
 
 
 function listaInicializalasa(data){
   lista = data;
-  kartyakLegeneralasa(lista.albumok)
+  kartyakLegeneralasa(lista)
 }
 
 function kartyakLegeneralasa(album_lista) {
